@@ -1,0 +1,20 @@
+doctype html
+
+html(lang='en')
+  head
+    style.
+      main {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+  body
+    <main>
+      <h1>Notícias Folha de São Paulo</h1>
+      each i in noticias
+        div
+          h3=i.title
+          a(href=i.link)=i.link
+    <main>
